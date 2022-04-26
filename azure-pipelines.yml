@@ -20,4 +20,7 @@ steps:
     versionSpec: '$(python.version)'
   displayName: 'Use Python $(python.version)'
 
+- script: pip install -r requirements.txt
+  displayName: 'Install requirements'
+  
 - script: python startup.py
